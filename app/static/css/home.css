@@ -1,0 +1,68 @@
+.home {
+    text-align: center;
+    margin: 75px 10% 75px 10%;
+}
+
+#description {
+    text-align: left;
+    margin: 10px 0 20px 0;
+}
+
+.github-button {
+    margin: 20px 0 20px 0;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.github-button img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px; /* Added margin-right to create space between image and text */
+    vertical-align: middle; /* Align the image vertically in the middle of the line */
+}
+
+.github-button a {
+    color: #24292e;
+    font-size: 17px;
+    line-height: 30px;
+    display: inline-block; /* Added display: inline-block to make the text appear next to the image */
+}
+
+#infos {
+    margin: 20px 0;
+    text-align: left;
+}
+
+#invite-button {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    background-color: #5ca4da;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 17px;
+    font-weight: 500;
+    display: block;
+    width: 220px;
+    margin: 20px auto;
+}
+
+#invite-button:hover {
+    background-color: #a1cbeb;
+}
+
+#profile-img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    margin: 10px 0;
+}
+
+#irr-verbs-subcmds-list {
+    list-style-type: none;
+}
+
+#main-title {
+    font-size: 40px;
+    color: #333;
+    margin: 0 0 20px 0;
+}

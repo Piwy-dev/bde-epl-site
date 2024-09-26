@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Terms of services</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="{{ url_for('static', filename='js/index.js') }}"></script>
+</head>
+
+<body class="main">
+    <!-- Top navbar -->
+    <div class="top">
+        <!-- Return button -->
+        <a href="/en/home" id="return-button">&#x2B05; Home</a>
+
+        <!-- Language switcher -->
+        <select id="languageSwitcher">
+            <option value="en"><span>&#x1F1EC;&#x1F1E7;</span> English</option>
+            <option value="fr"><span>&#x1F1EB;&#x1F1F7;</span> Français</option>
+            <option value="nl"><span>&#x1F1F3;&#x1F1F1;</span> Nederlands</option>
+        </select>
+    </div>
+
+    <div class="terms">
+        <h1>🇬🇧 Terms of Services</h1>
+
+        <p>🕖 <b>Last modified:</b> July 01, 2024.</p>
+
+        <h2>1. General Information</h2>
+        <p>
+            General Knowledge Bot is a Discord bot for general knowledge. It offers several commands and features to
+            test your knowledge with the members of your server.
+
+            To see how to install and use its commands, visit our <a href="home">homepage</a>.
+
+            Every time a member uses a test command, they earn points if they answer correctly and lose points if they
+            answer incorrectly. This information, along with other data, is stored in a database. To learn more, check
+            out our <a href="privacy">privacy policy</a>.
+        </p>
+
+        <h2>2. Contact us</h2>
+        <p>
+            For any further information, you can contact an administrator.
+        </p>
+        <h3>2.1. List of administrators</h3>
+        <p>
+            Here is the list of administrators of the application:
+        <ul>
+            <li>Pierre-Yves Haubruge: piwy_</li>
+        </ul>
+        </p>
+    </div>
+
+    <div class="bottom">
+        <p id="footer">This site is fully open-source:
+            <a href="https://github.com/Piwy-dev/general-knowledge-site">view on GitHub</a>.
+        </p>
+    </div>
+</body>
+
+</html>

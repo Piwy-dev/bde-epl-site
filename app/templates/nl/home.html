@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Home</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}">
+    <script src="{{ url_for('static', filename='js/index.js') }}"></script>
+</head>
+
+<body class="main">
+    <!-- Top navbar -->
+    <div class="top">
+        <!-- Return button -->
+        <a href="/en/home" id="return-button">Home</a>
+
+        <!-- Language switcher -->
+        <select id="languageSwitcher">
+            <option value="nl"><span>&#x1F1F3;&#x1F1F1;</span> Nederlands</option>
+            <option value="fr"><span>&#x1F1EB;&#x1F1F7;</span> Français</option>
+            <option value="en"><span>&#x1F1EC;&#x1F1E7;</span> English</option>
+        </select>
+    </div>
+
+    <div class="home">
+        <h1 id="main-title">General Knowledge Bot</h1>
+        <img src="{{ url_for('static', filename='images/gkb.png') }}" alt="Profile photo" id="profile-img">
+
+        <!-- Invite button -->
+        <a href="https://discord.com/api/oauth2/authorize?client_id=803979491373219840&permissions=8&scope=bot%20applications.commands"
+            id="invite-button">
+            Inviter le bot
+        </a>
+
+        <!-- GitHub button -->
+        <div class="github-button">
+            <a href="https://github.com/Piwy-dev/general-knowledge-bot">
+                <img src="{{ url_for('static', filename='images/github-logo.svg') }}" alt="GitHub Logo">
+                GitHub
+            </a>
+        </div>
+
+        <p id="description">
+            General Knowledge Bot is een Discord-bot over algemene kennis. Het biedt veel functies en commando's om je
+            algemene kennis te testen met de leden van je server. Telkens wanneer een lid een testcommando gebruikt,
+            verdient hij punten als hij correct antwoordt en verliest hij punten in het tegenovergestelde geval. Deze
+            punten en andere opties worden opgeslagen in een database. Voor meer informatie verwijzen we je graag naar
+            onze <a href="terms">servicevoorwaarden</a> en <a href="privacy">privacybeleid</a>.
+        </p>
+        </p>
+        <div id="infos">
+            <h3>Meertalig</h3>
+            <p>
+            Deze bot ondersteunt 3 talen: Frans, Engels en Nederlands:
+            <a href="home#config-cmds">zie hoe te configureren</a>
+            </p>
+
+            <h2>Lijst met commando's</h2>
+
+            <h3>Test commando's</h3>
+            <ol>
+            <li><b>/truefalse</b> stuurt je een bericht met een stelling. Nadat je het bericht hebt ontvangen, kun
+                je op de juiste knop klikken
+                afhankelijk van of je denkt dat de stelling waar of onwaar is.</li>
+            <li><b>/flag</b> stuurt je een bericht met een vlag. Nadat je het bericht hebt ontvangen, kun je de naam
+                van het land invoeren
+                dat overeenkomt met de vlag door op de knop onderaan het bericht te klikken.
+            <li><b>/capital</b> stuurt je een bericht met een landnaam. Nadat je het bericht hebt ontvangen, kun je
+                de naam van
+                de hoofdstad van het land invoeren door op de knop onderaan het bericht te klikken.</li>
+            <li><b>/logo</b> stuurt je een bericht met een logo. Nadat je het bericht hebt ontvangen, kun je de naam
+                van het bedrijf invoeren
+                dat bij dit logo hoort door op de knop onderaan het bericht te klikken.</li>
+            </ol>
+
+            <h3>Onregelmatige werkwoorden commando's</h3>
+            <ol>
+            <li><b>/werkwoorden-lijst</b> stuurt een bericht met de lijst van alle werkwoorden op basis van de volgende opties:
+                <ol id="irr-verbs-subcmds-list">
+                <li><u>taal</u>: de taal van de werkwoordenlijst (Engels of Nederlands).</li>
+                <li><u>toonvertaling</u>: als True, toon de infinitief van het werkwoord en de vertaling in het Frans; anders toon de infinitief, de onvoltooide tijd en het voltooide deelwoord.</li>
+                </ol>
+            </li>
+            <li><b>/bestudeer-infinitief</b> documentatie volgt...</li>
+            <li><b>/bestudeer-onvoltooide-tijd</b> documentatie volgt...</li>
+            <li><b>/bestudeer-voltooide-deelwoord</b> documentatie volgt...</li>
+            </ol>
+
+            <h3>Punten commando's</h3>
+            <ol>
+            <li><b>/profiel</b> toont de punten van de geselecteerde <b><i>gebruiker.</i></b></li>
+            <li><b>/leaderboard</b> toont de eerste 20 leden van de server met de meeste punten.</li>
+            <li><b>/adminxp</b> verandert de punten van de geselecteerde <b><i>gebruiker</i></b>. Dit commando is alleen
+                beschikbaar voor beheerders.</li>
+            </ol>
+
+            <h3 id="config-cmds">Configuratie commando's</h3>
+            <ol>
+            <li><b>/setlang</b> verandert de taal van de bot naar de geselecteerde taal (Frans, Engels, Nederlands)</li>
+            </ol>
+        </div>
+    </div>
+
+    <div class="bottom">
+        <p id="footer">Deze website is volledig open-source:
+            <a href="https://github.com/Piwy-dev/general-knowledge-site">bekijk op GitHub</a>.
+        </p>
+    </div>
+</body>
+
+</html>
