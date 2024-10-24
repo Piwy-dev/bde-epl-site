@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Acceuil</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}">
+    <script src="{{ url_for('static', filename='js/index.js') }}"></script>
+</head>
+
+<body class="main">
+    <!-- Top navbar -->
+    <div class="top">
+        <!-- Return button -->
+        <a href="/fr/home" id="return-button">Acceuil</a>
+
+        <a href="/fr/membres" id="return-button">Membres</a>
+    </div>
+
+    <div class="home">
+        <h1 id="main-title">Bureau des étudiants</h1>
+    </div>
+
+    <div class="bottom">
+        <p id="footer">Ce site est entièrement open-source :
+            <a href="https://github.com/Piwy-dev/bde-epl-site">voir sur GitHub</a>.
+        </p>
+    </div>
+</body>
+
+</html>
