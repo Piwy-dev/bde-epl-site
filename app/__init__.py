@@ -26,9 +26,9 @@ def create_app(test_config=None):
     def home():
         return render_template('/home.html')
     
-    @app.route("/membres")
+    @app.route("/members")
     def membres():
-        return render_template('/membres.html')
+        return render_template('/members.html')
     
     @app.route("/privacy")
     def privacy():
