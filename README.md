@@ -1,8 +1,8 @@
-Site web officiel pour le BDE (bureau des étudiants) de L'[Ecole Polytechnique de Louvain](https://uclouvain.be/fr/facultes/epl).
+Site web officiel pour le BDE (bureau des étudiants) de l'[Ecole Polytechnique de Louvain](https://uclouvain.be/fr/facultes/epl).
 
 Vous pouvez visiter le site via [ce lien](https://bde-epl.uclouvain.be)
 
-Ce site utilise la librairie python [Flask](https://flask.palletsprojects.com/en/3.0.x/) pour son architure backend.
+Ce site utilise la librairie python [Flask](https://flask.palletsprojects.com/en/3.0.x/).
 
 Il est entièrement open-source sous licence [GNU General Public License v3.0](https://github.com/Piwy-dev/bde-epl-site/blob/main/LICENSE).
 
