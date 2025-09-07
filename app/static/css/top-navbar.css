@@ -1,17 +1,25 @@
 .top-navbar {
-    background-color: #222e3c;
+    background-color: #2e61bf;
     padding: 0 32px;
     height: 60px;
     display: flex;
     align-items: center;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+}
+
+.nav-title {
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-right: 32px;
+    letter-spacing: 1px;
+    white-space: nowrap;
+    margin: 0;
 }
 
 .nav-links {
     list-style: none;
     display: flex;
-    gap: 24px;
-    margin: 0;
+    margin: 0 0 0 30px; 
     padding: 0;
 }
 
@@ -32,6 +40,6 @@
 
 .nav-links a:hover,
 .nav-links a:focus {
-    background-color: #31425b;
-    color: #ffd700;
+    background-color: #1b3a7a;
+    color: #e0e0e0;
 }
