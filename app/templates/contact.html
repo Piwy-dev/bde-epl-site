@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/top-navbar.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bottom-navbar.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/contact.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    {% include 'top-navbar.html' %}
+
+    <div class="socials">
+        <a href="https://discord.gg/NdDNK5zAMW" class="social-link" target="_blank" aria-label="Discord EPL">
+            <i class="fab fa-discord"></i>
+            <p>Discord EPL</p>
+        </a>
+        <a href="https://www.instagram.com/bde_epl" class="social-link" target="_blank" aria-label="Instagram">
+            <i class="fab fa-instagram"></i>
+            <p>@bde_epl</p>
+        </a>
+        <a href="https://www.facebook.com/profile.php?id=61579853383927" class="social-link" target="_blank" aria-label="Facebook">
+            <i class="fab fa-facebook"></i>
+            <p>BDE EPL</p>
+        </a>
+        <a href="mailto:bde-epl@uclouvain.be" class="social-link" target="_blank" aria-label="Email">
+            <i class="fas fa-envelope"></i>
+            <p>bde-epl@uclouvain.be</p>
+        </a>
+        <a href="https://discord.gg/yTMPsKyBXY" class="social-link" target="_blank" aria-label="Discord SINF">
+            <i class="fab fa-discord"></i>
+            <p>Discord SINF</p>
+        </a>
+    </div>
+
+    {% include 'bottom-navbar.html' %}
+</body>
+</html>

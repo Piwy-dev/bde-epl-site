@@ -3,5 +3,6 @@
     <ul class="nav-links">
         <li><a class="{% if request.endpoint == 'home' %}active{% endif %}" href="{{ url_for('home') }}">Acceuil</a></li>
         <li><a class="{% if request.endpoint == 'members' %}active{% endif %}" href="{{ url_for('members') }}">Membres</a></li>
+        <li><a class="{% if request.endpoint == 'contact' %}active{% endif %}" href="{{ url_for('contact') }}">Contact</a></li>
     </ul>
 </nav>

@@ -29,5 +29,9 @@ def create_app(test_config=None):
     @app.route("/members")
     def members():
         return render_template('/members.html')
+    
+    @app.route("/Contact")
+    def contact():
+        return render_template('/contact.html')
 
     return app
