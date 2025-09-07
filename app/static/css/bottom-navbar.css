@@ -1,0 +1,30 @@
+.bottom-navbar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #222;
+    color: #fff;
+    padding: 0.75rem 0;
+    text-align: center;
+    box-shadow: 0 -2px 8px rgba(0,0,0,0.08);
+    z-index: 100;
+    font-size: 1rem;
+}
+
+.bottom-navbar #footer {
+    margin: 0;
+    padding: 0;
+}
+
+.bottom-navbar a {
+    color: #4fc3f7;
+    text-decoration: underline;
+    transition: color 0.2s;
+}
+
+.bottom-navbar a:hover,
+.bottom-navbar a:focus {
+    color: #81d4fa;
+    text-decoration: none;
+}
