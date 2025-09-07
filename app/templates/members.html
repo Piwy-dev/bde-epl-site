@@ -4,10 +4,9 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>Acceuil</title>
+    <title>Membres</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}">
-    <script src="{{ url_for('static', filename='js/index.js') }}"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/members.css') }}">
 </head>
 
 <body class="main">
@@ -15,22 +14,62 @@
     <div class="top">
         <!-- Return button -->
         <a href="/home" id="return-button">Acceuil</a>
-
         <a href="/members" id="return-button">Membres</a>
     </div>
 
-    <div class="home">
-        <h1 id="main-title">Bureau des étudiants</h1>
+    <h1>Membres 2025-2026</h1>
+    <div class="members">
+        <div class="member">
+            <img class="member-photo" src="{{ url_for('static', filename='images/members/man.png') }}" alt="Charles Van Hees">
+            <p class="member-name">Charles Van Hees </p>
+            <p class="member-role">Président, INGE, Master 2</p>
+        </div>
+        <div class="member">
+            <img class="member-photo" src="{{ url_for('static', filename='images/members/woman.png') }}" alt="Ysaline Roosemont">
+            <p class="member-name">Ysaline Roosemont</p>
+            <p class="member-role">Vice-Présidente, INGE, Bac 3</p>
+        </div>
+        <div class="member">
+            <img class="member-photo" src="{{ url_for('static', filename='images/members/pierreyves.jpg') }}" alt="Pierre-Yves Haubruge">
+            <p class="member-name">Pierre-Yves Haubruge</p>
+            <p class="member-role">Trésorier, SINF, Master 1</p>
+        </div>
+        <div class="member">
+            <img class="member-photo" src="{{ url_for('static', filename='images/members/man.png') }}" alt="Thomas Renauld">
+            <p class="member-name">Thomas Renauld</p>
+            <p class="member-role">Secrétaire, INGE, Bac 3</p>
+        </div>
+        <div class="member">
+            <img class="member-photo" src="{{ url_for('static', filename='images/members/man.png') }}" alt="Wouter Vermeulen">
+            <p class="member-name">Wouter Vermeulen</p>
+            <p class="member-role">Membre, INGE, Master 2</p>
+        </div>
+        <div class="member">
+            <img class="member-photo" src="{{ url_for('static', filename='images/members/man.png') }}" alt="Louis Dupont">
+            <p class="member-name">Louis Dupont</p>
+            <p class="member-role">Membre, SINF, Passerelle</p>
+        </div>
+        <div class="member">
+            <img class="member-photo" src="{{ url_for('static', filename='images/members/woman.png') }}" alt="Emma Didion">
+            <p class="member-name">Emma Didion</p>
+            <p class="member-role">Membre, SINF, Bac 2</p>
+        </div>
+        <div class="member">
+            <img class="member-photo" src="{{ url_for('static', filename='images/members/man.png') }}" alt="Maxime Drooghaag">
+            <p class="member-name">Maxime Drooghaag</p>
+            <p class="member-role">Membre, SINF, Bac 2</p>
+        </div>
+        <div class="member">
+            <img class="member-photo" src="{{ url_for('static', filename='images/members/woman.png') }}" alt="Julie Guillaume">
+            <p class="member-name">Julie Guillaume</p>
+            <p class="member-role">Membre, INGE, Master 1</p>
+        </div>
     </div>
 
     <div class="bottom">
-        <a href="/privacy">Politique de confidentialité</a>
-        <a href="/terms">Conditions d'utilisation</a>
-
-        <p id="footer">Ce site est entièrement open-source sous licence <a href="https://github.com/Piwy-dev/bde-epl-site/blob/main/LICENSE"> GNU GPL v3.0</a> : 
+        <p id="footer">Ce site est entièrement open-source sous licence <a href="https://github.com/Piwy-dev/bde-epl-site/blob/main/LICENSE">GNU GPL v3.0</a> : 
             <a href="https://github.com/Piwy-dev/bde-epl-site">voir sur GitHub</a>.
         </p>
     </div>
 </body>
-
 </html>
