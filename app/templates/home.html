@@ -14,11 +14,13 @@
 <body>
     {% include 'top-navbar.html' %}
 
-    <h1>Bureau des Étudiant·e·s de l'EPL</h1>
 
     <div class="description">
         <img class="description-logo" src="{{ url_for('static', filename='images/logo-color.svg') }}" alt="Logo du BDE">
-        <p class="description-text">Le Bureau des Étudiant·e·s (BDE) est une organisation étudiante composée principalement de délégués. L'EPL ne possédait plus de BDE depuis très longtemps, et nous sommes ravis de relancer cette initiative cette année (année académique 2025-2026) ! Pour nos débuts nous avons regroupé nos objectifs sous trois missions principales.</p>
+        <div class="description-text">
+            <h1>Bureau des Étudiant·e·s de l'EPL</h1>
+            <p>Le Bureau des Étudiant·e·s (BDE) est une organisation étudiante composée principalement de délégués. L'EPL ne possédait plus de BDE depuis très longtemps, et nous sommes ravis de relancer cette initiative cette année (année académique 2025-2026) ! Pour nos débuts nous avons regroupé nos objectifs sous trois missions principales.</p>
+        </div>
     </div>
 
     <div class="missions">
