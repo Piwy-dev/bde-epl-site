@@ -7,17 +7,11 @@
     <title>Acceuil</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}">
-    <script src="{{ url_for('static', filename='js/index.js') }}"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/topnavbar.css') }}">
 </head>
 
 <body class="main">
-    <!-- Top navbar -->
-    <div class="top">
-        <!-- Return button -->
-        <a href="/home" id="return-button">Acceuil</a>
-
-        <a href="/members" id="return-button">Membres</a>
-    </div>
+    {% include 'top-navbar.html' %}
 
     <div class="home">
         <h1 id="main-title">Bureau des Étudiant·e·s de l'EPL</h1>
