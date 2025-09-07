@@ -3,8 +3,7 @@
     bottom: 0;
     left: 0;
     width: 100%;
-    background: #222;
-    color: #fff;
+    background: rgba(176, 191, 207, 0.05);
     padding: 0.75rem 0;
     text-align: center;
     box-shadow: 0 -2px 8px rgba(0,0,0,0.08);
@@ -12,19 +11,21 @@
     font-size: 1rem;
 }
 
-.bottom-navbar #footer {
+.footer {
     margin: 0;
     padding: 0;
+    font-size: 1rem;
+    color: #1d1d1d;
 }
 
-.bottom-navbar a {
-    color: #4fc3f7;
-    text-decoration: underline;
+.footer a {
+    color: #0288d1;
+    text-decoration: none;
     transition: color 0.2s;
 }
 
-.bottom-navbar a:hover,
-.bottom-navbar a:focus {
-    color: #81d4fa;
+.footer a:hover,
+.footer a:focus {
+    color: #005b9f;
     text-decoration: none;
 }
