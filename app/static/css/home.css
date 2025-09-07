@@ -1,6 +1,23 @@
-.home {
-    text-align: center;
-    margin: 75px 10% 75px 10%;
+.description {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+}
+
+.description-logo {
+    width: 200px;
+    height: 200px;
+    flex-shrink: 0;
+    border-radius: 12px;
+}
+
+.description-text {
+    font-size: 18px;
+    color: #2d3a4a;
+    line-height: 1.6;
+    margin: 0;
+    max-width: 650px;
 }
 
 .missions {
@@ -37,15 +54,15 @@
 }
 
 .mission h3 {
-    margin-top: 0;
-    margin-bottom: 14px;
-    font-size: 22px;
     color: #5ca4da;
+    font-size: 22px;
+    margin: 0 0 12px 0;
+    width: 100%;
+    text-align: center;
 }
 
 .mission p {
     margin: 0;
     color: #333;
-    font-size: 16px;
-    line-height: 1.5;
+    font-size: 17px;
 }
