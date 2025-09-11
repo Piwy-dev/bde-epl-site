@@ -1,4 +1,5 @@
 import os
+from .config import DevelopmentConfig, ProductionConfig
 from flask import Flask, render_template, g, current_app, redirect, request
 
 def create_app(test_config=None):
@@ -6,9 +7,12 @@ def create_app(test_config=None):
     Create and configure the app.
     """
     app = Flask(__name__, instance_relative_config=True)
-    app.config.from_mapping(
-        SECRET_KEY='dev',
-    )
+    
+    config_name = os.environ.get('APP_CONFIG', 'development')
+    if config_name == 'production':
+        app.config.from_object(ProductionConfig)
+    else:
+        app.config.from_object(DevelopmentConfig)
 
     # ensure the instance folder exists
     try:
